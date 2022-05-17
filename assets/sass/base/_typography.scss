@@ -1,4 +1,84 @@
 body {
     font-family: 'Fredoka', sans-serif;
+    color: $dark;
 }
 
+.text-center {
+    text-align: center;
+}
+
+/*h1, h2, h3, h4, h5 {
+    margin-bottom: 3px;
+}*/
+
+a {
+    font-size: $a-size;
+    color: $gray;
+    text-decoration: none;
+    &:hover {
+        color: $mustard;
+    }
+}
+
+h1 {
+    font-size: $h1-size;
+    line-height: 50px;
+}
+h2 {
+    font-size: $h2-size;
+    line-height: 40px;
+}
+h3 {
+    font-size: $h3-size;
+    font-weight: $regular;
+    line-height: 35px;
+}
+h4 {
+    font-size: $h4-size;
+    line-height: 30px;
+}
+h5 {
+    font-size: $h5-size;
+    line-height: 16px;
+}
+h6 {
+    font-size: $h5-size;
+    line-height: 14px;
+}
+p {
+    font-size: $p-size;
+    line-height: 25px;
+    letter-spacing: 1px;
+    padding: 3px 0;
+}
+li{
+    font-size: $li-size;
+    line-height: 15px;
+    list-style-type: disc
+}
+ol{
+    padding: 0 0 20px 30px;
+    margin: 0;
+}
+figcaption {
+    font-size: $p-size;
+    line-height: 18px;
+    color: $light-gray;
+    font-weight: $light;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+br{
+      line-height: 20px;  
+}
+
+button {
+    font-size: $h4-size;
+    font-weight: $bold;
+    color: $white;
+}
+
+.bold {
+    font-weight: $bold;
+    color: $dark;
+}

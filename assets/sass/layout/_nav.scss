@@ -1,5 +1,21 @@
 .navbar {
+    width: 100%;
+    height: 150px;
     a{
         text-decoration: none;
+        color: $dark;
+    }
+    .navbar__logo img{
+        margin-top: 20px;
+        max-width: 100%;
+        height: 100%;
+    }
+    .navtxt {
+        position: absolute;
+        top: 65px;
+    }
+    a:hover {
+        color: $mustard;
+        transition: all 0.18s ease-in-out;
     }
 }

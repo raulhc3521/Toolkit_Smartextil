@@ -1,4 +1,36 @@
-.box {
-    border: 2px solid black;
-    margin: 10px;
+.header {
+    .header__carrousel {
+        width: 100%;
+        height: 400px;
+        overflow-x: scroll;
+        white-space: nowrap;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        transition: all 5s ease-in-out;
+    }
+    .header__carrousel__text {
+        padding: 80px 10px;
+        width: 100%;
+        max-width: 500px;
+        position: absolute;
+        right: 0;
+        text-align: right;
+    }
+    .header__carrousel__img {
+        width: 100%;
+        height: 100%;
+        margin: 0 -2px;
+        display: inline;
+    }
+    .carrousel_dot {
+        width: fit-content;
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 20px 3px;
+            border-radius: 5px;
+            background-color: $light-gray;
+        }        
+    }
 }

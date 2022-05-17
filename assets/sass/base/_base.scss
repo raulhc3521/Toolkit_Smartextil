@@ -4,3 +4,10 @@
 .fl_r {
     float: right;
 }
+.m-auto {
+    margin: 0 auto;
+}
+html {
+    scroll-behavior: smooth;
+    transition: all 5s ease-in-out;
+}
