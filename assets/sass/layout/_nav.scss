@@ -1,6 +1,10 @@
 .navbar {
     width: 100%;
     height: 150px;
+    position: fixed;
+    top: 0;
+    background-color: $white;
+    z-index: 90;
     a{
         text-decoration: none;
         color: $dark;
@@ -11,11 +15,53 @@
         height: 100%;
     }
     .navtxt {
-        position: absolute;
-        top: 65px;
+        //position: absolute;
+        margin-top: 60px;
+        float: right;
+        height: 100%;
+        width: 100%;
+        text-align: right;
     }
     a:hover {
         color: $mustard;
         transition: all 0.18s ease-in-out;
     }
 }
+
+.toolkit_list {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 60px;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out; 
+    li:hover {
+        background-color: $mustard;
+        transition: all 0.15s ease-in-out;
+    }
+    li {
+        list-style: none;
+        margin: 0 0 0 -3px;
+        padding: 3px;
+        a:hover {
+            color: $white;
+            transition: all 0.15s ease-in-out;
+        }
+    }
+}
+.toolkit input:checked ~ .toolkit_list {
+
+    visibility: visible;
+    opacity: 10;
+    position: absolute;
+    top: 80px;
+    height: 70px;
+    transition: all 0.2s ease-in-out;    
+}
+
+.toolkit h5:hover {
+    color: $mustard;
+    transition: all 0.18s ease-in-out;
+}
+

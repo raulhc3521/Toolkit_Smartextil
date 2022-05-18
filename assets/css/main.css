@@ -351,12 +351,12 @@ h4 {
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 16px;
 }
 
 h6 {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 14px;
 }
 
@@ -570,6 +570,10 @@ body::-webkit-scrollbar-thumb:hover {
 .navbar {
   width: 100%;
   height: 150px;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 90;
 }
 .navbar a {
   text-decoration: none;
@@ -581,14 +585,57 @@ body::-webkit-scrollbar-thumb:hover {
   height: 100%;
 }
 .navbar .navtxt {
-  position: absolute;
-  top: 65px;
+  margin-top: 60px;
+  float: right;
+  height: 100%;
+  width: 100%;
+  text-align: right;
 }
 .navbar a:hover {
   color: #e8c858;
   transition: all 0.18s ease-in-out;
 }
 
+.toolkit_list {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 60px;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.toolkit_list li:hover {
+  background-color: #e8c858;
+  transition: all 0.15s ease-in-out;
+}
+.toolkit_list li {
+  list-style: none;
+  margin: 0 0 0 -3px;
+  padding: 3px;
+}
+.toolkit_list li a:hover {
+  color: #ffffff;
+  transition: all 0.15s ease-in-out;
+}
+
+.toolkit input:checked ~ .toolkit_list {
+  visibility: visible;
+  opacity: 10;
+  position: absolute;
+  top: 80px;
+  height: 70px;
+  transition: all 0.2s ease-in-out;
+}
+
+.toolkit h5:hover {
+  color: #e8c858;
+  transition: all 0.18s ease-in-out;
+}
+
+.header {
+  margin-top: 150px;
+}
 .header .header__carrousel {
   width: 100%;
   height: 400px;

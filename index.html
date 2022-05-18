@@ -12,20 +12,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap" rel="stylesheet">
 
+    
+
 </head>
 <body>  
     <nav class="navbar">
         <div class="container">
             <div class="row">
-                <div class="col-3 navbar__logo"><a href=""><img src="assets/img/logo_smartextil_horizontal.svg" alt="logo smartextil"></a></div>
-                <div class="col-3"><a class="navtxt" href="">Proceso de Creación</a></div>
-                <div class="col-3"><a class="navtxt" href="">Toolkit</a></div>
-                <div class="col-3"><a class="navtxt" href="">Contáctanos</a></div>
+                <div class="col-3 navbar__logo" onclick="uncheck()"><a href=""><img src="assets/img/logo_smartextil_horizontal.svg" alt="logo smartextil"></a></div>
+                <div class="col-3" onclick="uncheck()"><a class="navtxt" href="">Proceso de Creación</a></div>
+
+                <div class="col-3 toolkit">
+                    
+                    <label class="tool" for="tool"><h5 class="navtxt">Toolkit</h5></label>
+                    <input class="d-none" type="checkbox" id="tool">
+                    <div class="toolkit_list">
+                        <ul >
+                            <li><a href="">Biomaterial</a></li>
+                            <li><a href="">Fabricación Digital</a></li>
+                            <li><a href="">Electrónica</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-3" onclick="uncheck()"><a class="navtxt" href="">Contáctanos</a></div>
             </div>
         </div>
     </nav>
 
-    <header class="header container_fluid">
+    <header class="header container_fluid" onclick="uncheck()">
         <div class="header__carrousel__text">
             <h1>SMARTESTIL</h1>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id minima iusto amet error voluptatum vero animi illo fuga quas nulla accusamus atque recusandae, molestiae harum quibusdam mollitia sint! Odit, suscipit.</h2>
@@ -49,25 +64,25 @@
         </div>
     </header>
 
-    <section class="sectxt container">
+    <section class="sectxt container" onclick="uncheck()">
         <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nesciunt unde numquam saepe assumenda, dolor sequi eius quos quasi debitis sint magnam soluta molestiae temporibus, quod exercitationem deserunt nam minus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum magni eligendi suscipit enim, eveniet consectetur illum culpa aliquam, nesciunt accusamus tenetur asperiores, saepe minima ad cumque omnis provident quas quos.</h4>
     </section>
 
-    <section class="secimgleft container">
+    <section class="secimgleft container" onclick="uncheck()">
         <div class="row">
             <img class="col-6" src="assets/img/test.jpg" alt="">
             <p class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus repellendus at harum enim, atque hic, earum possimus consequuntur ipsum ullam, itaque similique! Reiciendis temporibus ex similique minima unde non.</p>
         </div>
     </section>
 
-    <section class="secimgright container">
+    <section class="secimgright container" onclick="uncheck()">
         <div class="row">
             <p class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni commodi dolorem qui dicta sunt omnis nobis aliquid enim possimus quod voluptas quidem sapiente in, sint culpa distinctio perspiciatis aut?</p>
             <img class="col-6" src="assets/img/test.jpg" alt="">
         </div>
     </section>
 
-    <footer class="footer container_fluid">
+    <footer class="footer container_fluid" onclick="uncheck()">
         <div class="footer__container container">
             <div class="row">
                 <div class="col-4">
@@ -90,5 +105,7 @@
         </div>
     </footer>
 
+    <!-- Script propio -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
