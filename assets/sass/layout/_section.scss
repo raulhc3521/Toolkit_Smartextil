@@ -1,13 +1,18 @@
 .sectxt {
     margin: 100px auto;
     text-align: center;
+    h4 {
+        margin: 50px 200px;
+        line-height: 33px;
+    }
 }
 
 .secimgleft, .secimgright {
+    margin: 100px auto;
     img {
         width: 100%;
     }
     p {
-        margin: auto 15px;
+        margin: auto 80px;
     }
 }

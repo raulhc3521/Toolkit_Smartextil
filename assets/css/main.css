@@ -70,6 +70,14 @@ html {
   transition: all 5s ease-in-out;
 }
 
+.nav_active {
+  color: #e8c858 !important;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
 .container {
   width: 90%;
   margin-left: auto;
@@ -402,6 +410,27 @@ button {
   color: #373737;
 }
 
+span {
+  color: #e8c858;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #909090;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #909090;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #909090;
+}
+
 .d-none {
   display: none;
 }
@@ -554,6 +583,23 @@ button {
     display: flex;
   }
 }
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 body::-webkit-scrollbar {
   width: 10px;
   /* width of the entire scrollbar */
@@ -604,19 +650,22 @@ body::-webkit-scrollbar-thumb:hover {
   height: 0px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
+  padding-top: 5px;
 }
 .toolkit_list li:hover {
   background-color: #e8c858;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .toolkit_list li {
+  background-color: #f4eed6;
   list-style: none;
   margin: 0 0 0 -3px;
-  padding: 3px;
+  padding: 6px;
+  z-index: 10;
 }
 .toolkit_list li a:hover {
   color: #ffffff;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .toolkit input:checked ~ .toolkit_list {
@@ -624,13 +673,14 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 10;
   position: absolute;
   top: 80px;
-  height: 70px;
+  height: 120px;
+  z-index: 11;
   transition: all 0.2s ease-in-out;
 }
 
 .toolkit h5:hover {
   color: #e8c858;
-  transition: all 0.18s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .header .header__carrousel {
@@ -643,12 +693,15 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all 5s ease-in-out;
 }
 .header .header__carrousel__text {
-  padding: 230px 10px 80px 10px;
+  padding: 230px 50px 80px 10px;
   width: 100%;
   max-width: 500px;
   position: absolute;
   right: 0;
   text-align: right;
+}
+.header .header__carrousel__text h1 {
+  margin-bottom: 10px;
 }
 .header .header__carrousel__img {
   width: 100%;
@@ -676,12 +729,19 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 100px auto;
   text-align: center;
 }
+.sectxt h4 {
+  margin: 50px 200px;
+  line-height: 33px;
+}
 
+.secimgleft, .secimgright {
+  margin: 100px auto;
+}
 .secimgleft img, .secimgright img {
   width: 100%;
 }
 .secimgleft p, .secimgright p {
-  margin: auto 15px;
+  margin: auto 80px;
 }
 
 .footer {
@@ -690,6 +750,92 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .footer .footer__container {
   padding: 50px 0;
+}
+
+.gallery .gallery__img-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.gallery .gallery__img-container img {
+  width: 100%;
+  opacity: 1;
+  margin: 0 auto;
+  display: none;
+}
+.gallery .carrousel_dot {
+  width: fit-content;
+}
+.gallery .carrousel_dot .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 6px 3px 0px 3px;
+  border-radius: 5px;
+  background-color: #d6d6d6;
+}
+
+/*.minop {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    display: none;
+}*/
+.activeimg {
+  display: block !important;
+  animation: fadein 0.2s ease-in-out 0s 1;
+  opacity: 1;
+}
+
+.contactanos {
+  margin-top: 200px;
+  text-align: center;
+}
+.contactanos h2 {
+  margin-bottom: 50px;
+}
+.contactanos button {
+  font-family: "Fredoka", sans-serif;
+  color: #373737;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #57e727;
+  border-radius: 13px;
+  border: none;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  margin: 0 20px;
+  opacity: 0.8;
+}
+.contactanos button:hover {
+  opacity: 1;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 2px 2px 2px #d6d6d6;
+}
+.contactanos .contactanos__form {
+  width: 40%;
+  margin: 0 auto;
+}
+.contactanos .contactanos__form .input-name, .contactanos .contactanos__form .input-mail, .contactanos .contactanos__form .input-message {
+  width: 100%;
+  max-width: 100%;
+  margin: 10px;
+  font-family: "Fredoka", sans-serif;
+  color: #373737;
+  border-radius: 13px;
+  border: solid 1px #909090;
+  padding: 0 10px;
+}
+.contactanos .contactanos__form .input-message {
+  min-height: 200px;
+  padding-top: 5px;
+}
+.contactanos .contactanos__form .input-name, .contactanos .contactanos__form .input-mail {
+  height: 26px;
+}
+
+textarea:focus, input:focus {
+  outline: none !important;
+  border: solid 1px #373737 !important;
 }
 
 /*# sourceMappingURL=main.css.map */

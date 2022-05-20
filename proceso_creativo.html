@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-3 navbar__logo" onclick="uncheck()"><a href=""><img src="assets/img/logo_smartextil_horizontal.svg" alt="logo smartextil"></a></div>
-                <div class="col-3" onclick="uncheck()"><a class="navtxt" href="proceso_creativo.html">Proceso de Creación</a></div>
+                <div class="col-3" onclick="uncheck()"><a class="navtxt nav_active" href="">Proceso de Creación</a></div>
 
                 <div class="col-3 toolkit">
                     
@@ -36,49 +36,40 @@
                     </div>
                 </div>
 
-                <div class="col-3" onclick="uncheck()"><a class="navtxt" href="contactanos.html">Contáctanos</a></div>
+                <div class="col-3" onclick="uncheck()"><a class="navtxt" href="">Contáctanos</a></div>
             </div>
         </div>
     </nav>
 
-    <header class="header container_fluid" onclick="uncheck()">
-        <div class="header__carrousel__text">
-            <h1>SMARTESTIL</h1>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id minima iusto amet error voluptatum vero animi illo fuga quas nulla accusamus atque recusandae, molestiae harum quibusdam mollitia sint! Odit, suscipit.</h2>
-        </div>
-        <div class="header__carrousel">            
-            <img class="header__carrousel__img" id="pic1" src="assets/img/test.jpg" alt="">
-            <img class="header__carrousel__img" id="pic2" src="assets/img/test.jpg" alt="">
-            <img class="header__carrousel__img" id="pic3" src="assets/img/test.jpg" alt="">
-            <img class="header__carrousel__img" id="pic4" src="assets/img/test.jpg" alt="">
-            <img class="header__carrousel__img" id="pic5" src="assets/img/test.jpg" alt="">
-            <img class="header__carrousel__img" id="pic6" src="assets/img/test.jpg" alt="">
-        </div>
-        <div class="carrousel_dot m-auto">
-            <a id="dot-1" onclick="dot1_active()" href="#pic1"><div class="dot dot1 active_dot"></div></a>
-            <a id="dot-2" onclick="dot2_active()" href="#pic2"><div class="dot dot2"></div></a>
-            <a id="dot-3" onclick="dot3_active()" href="#pic3"><div class="dot dot3"></div></a>
-            <a id="dot-4" onclick="dot4_active()" href="#pic4"><div class="dot dot4"></div></a>
-            <a id="dot-5" onclick="dot5_active()" href="#pic5"><div class="dot dot5"></div></a>
-            <a id="dot-6" onclick="dot6_active()" href="#pic6"><div class="dot dot6"></div></a>
-        </div>
-    </header>
-
-    <section class="sectxt container" onclick="uncheck()">
-        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nesciunt unde numquam saepe assumenda, dolor sequi eius quos quasi debitis sint magnam soluta molestiae temporibus, quod exercitationem deserunt nam minus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum magni eligendi suscipit enim, eveniet consectetur illum culpa aliquam, nesciunt accusamus tenetur asperiores, saepe minima ad cumque omnis provident quas quos.</h4>
-    </section>
-
-    <section class="secimgleft container" onclick="uncheck()">
+    <section class="secimgleft container pt-100" onclick="uncheck()">
         <div class="row">
             <img class="col-6" src="assets/img/test.jpg" alt="">
             <p class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus repellendus at harum enim, atque hic, earum possimus consequuntur ipsum ullam, itaque similique! Reiciendis temporibus ex similique minima unde non.</p>
         </div>
     </section>
 
+    <section class="sectxt container" onclick="uncheck()">
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nesciunt unde numquam saepe assumenda, dolor sequi eius quos quasi debitis sint magnam soluta molestiae temporibus, quod exercitationem deserunt nam minus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum magni eligendi suscipit enim, eveniet consectetur illum culpa aliquam, nesciunt accusamus tenetur asperiores, saepe minima ad cumque omnis provident quas quos.</h4>
+    </section>
+
     <section class="secimgright container" onclick="uncheck()">
         <div class="row">
             <p class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni commodi dolorem qui dicta sunt omnis nobis aliquid enim possimus quod voluptas quidem sapiente in, sint culpa distinctio perspiciatis aut?</p>
             <img class="col-6" src="assets/img/test.jpg" alt="">
+        </div>
+    </section>
+    <section onclick="uncheck()" class="gallery container">
+        <div class="gallery__img-container">
+            <img src="assets/img/test.jpg" alt="" class="galimg1 minop">
+            <img src="assets/img/test.jpg" alt="" class="galimg2 minop">
+            <img src="assets/img/test.jpg" alt="" class="galimg3 minop">
+            <img src="assets/img/test.jpg" alt="" class="galimg4 minop">
+        </div>
+        <div class="carrousel_dot m-auto">
+            <div class="dot dot1 active_dot" onclick="clickdot1()"></div>
+            <div class="dot dot2" onclick="clickdot2()"></div>
+            <div class="dot dot3" onclick="clickdot3()"></div>
+            <div class="dot dot4" onclick="clickdot4()"></div>
         </div>
     </section>
 
@@ -106,6 +97,6 @@
     </footer>
 
     <!-- Script propio -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script_proceso_creativo.js"></script>
 </body>
 </html>

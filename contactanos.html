@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- estilo CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap" rel="stylesheet">
+
+    
+
+</head>
+<body>  
+    <nav class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 navbar__logo" onclick="uncheck()"><a href=""><img src="assets/img/logo_smartextil_horizontal.svg" alt="logo smartextil"></a></div>
+                <div class="col-3" onclick="uncheck()"><a class="navtxt" href="proceso_creativo.html">Proceso de Creación</a></div>
+
+                <div class="col-3 toolkit">
+                    
+                    <label onclick="StopSlide()" class="tool" for="tool"><h5 class="navtxt">Toolkit<span class="DownArrow">▼</span></h5></label>
+                    <input class="d-none" type="checkbox" id="tool">
+                    <div class="toolkit_list">
+                        <ul >
+                            <li><a href="">Biomaterial</a></li>
+                            <li><a href="">Fabricación Digital</a></li>
+                            <li><a href="">Electrónica</a></li>
+                            <li><a href="">Fabricación de Prenda</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-3" onclick="uncheck()"><a class="navtxt" href="">Contáctanos</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contactanos container">
+        <h2>Contactanos</h2>
+        <form class="contactanos__form" action="https://formsubmit.co/your@email.com" method="POST">
+            <input class="input-name" type="text" name="name" placeholder="Nombre" required>
+            <input class="input-mail"type="email" name="email" placeholder="Mail" required>
+            <textarea class="input-message" name="message" id="" placeholder="Escribe un mensaje" required></textarea>
+            <button class="input-button" type="submit">Enviar</button>
+       </form>
+    </section>
+
+    <footer class="footer container_fluid" onclick="uncheck()">
+        <div class="footer__container container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/img/logo_Smartextil.svg" alt="">
+                </div>
+                <div class="col-4">
+                    <p>Siguenos en Redes Sociales:</p>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <div class="col-4">
+                    <p>Apoyados por:</p>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script propio -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

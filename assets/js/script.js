@@ -9,17 +9,18 @@ function uncheck() {
     }
 }
 
-/*function SlideUncheck(){
+function SlideUncheck(){
     if(tool.checked == true){
         clearInterval(MyTimer);
         SlideOn = false;
         alert("holi");
+
     }
     else{
         MyTimer = setInterval(slide, SlideTime);
         SlideOn = true;
     }
-}*/
+}
 
 // Carrousel
 var SlideOn = true;
@@ -27,9 +28,11 @@ var SlideOn = true;
 function StopSlide() {
     clearInterval(MyTimer);
     SlideOn = false;
+
 }
 
 var SlideTime = 4000;
+var Yposition = 10;
 var MyTimer = setInterval(slide, SlideTime);
 
 var dot1Active = true;
@@ -155,27 +158,27 @@ function clearTimer() {
 }
 
 function slide() {
-    if(dot1Active == true && scrollY < 10){
+    if(dot1Active == true && scrollY < Yposition){
         document.getElementById('dot-2').click();
         return;
     }
-    if(dot2Active == true && scrollY < 10){
+    if(dot2Active == true && scrollY < Yposition){
         document.getElementById('dot-3').click();
         return;
     }
-    if(dot3Active == true && scrollY < 10){
+    if(dot3Active == true && scrollY < Yposition){
         document.getElementById('dot-4').click();
         return;
     }
-    if(dot4Active == true && scrollY < 10){
+    if(dot4Active == true && scrollY < Yposition){
         document.getElementById('dot-5').click();
         return;
     }
-    if(dot5Active == true && scrollY < 10){
+    if(dot5Active == true && scrollY < Yposition){
         document.getElementById('dot-6').click();
         return;
     }
-    if(dot6Active == true && scrollY < 10){
+    if(dot6Active == true && scrollY < Yposition){
         document.getElementById('dot-1').click();
         return;
     }

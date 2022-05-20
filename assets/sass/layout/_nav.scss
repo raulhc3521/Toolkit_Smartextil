@@ -36,17 +36,21 @@
     height: 0px;
     overflow: hidden;
     transition: all 0.2s ease-in-out; 
+    padding-top: 5px;
+    
     li:hover {
         background-color: $mustard;
-        transition: all 0.15s ease-in-out;
+        transition: all 0.1s ease-in-out;
     }
     li {
+        background-color: $mayonnaise;
         list-style: none;
         margin: 0 0 0 -3px;
-        padding: 3px;
+        padding: 6px;
+        z-index: 10;
         a:hover {
             color: $white;
-            transition: all 0.15s ease-in-out;
+            transition: all 0.1s ease-in-out;
         }
     }
 }
@@ -56,12 +60,12 @@
     opacity: 10;
     position: absolute;
     top: 80px;
-    height: 70px;
-    transition: all 0.2s ease-in-out;    
+    height: 120px;
+    z-index: 11;
+    transition: all 0.2s ease-in-out; 
 }
 
 .toolkit h5:hover {
     color: $mustard;
-    transition: all 0.18s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
-
