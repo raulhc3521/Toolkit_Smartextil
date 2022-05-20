@@ -24,7 +24,7 @@
 
                 <div class="col-3 toolkit">
                     
-                    <label class="tool" for="tool"><h5 class="navtxt">Toolkit</h5></label>
+                    <label onclick="StopSlide()" class="tool" for="tool"><h5 class="navtxt">Toolkit</h5></label>
                     <input class="d-none" type="checkbox" id="tool">
                     <div class="toolkit_list">
                         <ul >
@@ -54,12 +54,12 @@
             <img class="header__carrousel__img" id="pic6" src="assets/img/test.jpg" alt="">
         </div>
         <div class="carrousel_dot m-auto">
-            <a href="#pic1"><div class="dot"></div></a>
-            <a href="#pic2"><div class="dot"></div></a>
-            <a href="#pic3"><div class="dot"></div></a>
-            <a href="#pic4"><div class="dot"></div></a>
-            <a href="#pic5"><div class="dot"></div></a>
-            <a href="#pic6"><div class="dot"></div></a>
+            <a id="dot-1" onclick="dot1_active()" href="#pic1"><div class="dot dot1 active_dot"></div></a>
+            <a id="dot-2" onclick="dot2_active()" href="#pic2"><div class="dot dot2"></div></a>
+            <a id="dot-3" onclick="dot3_active()" href="#pic3"><div class="dot dot3"></div></a>
+            <a id="dot-4" onclick="dot4_active()" href="#pic4"><div class="dot dot4"></div></a>
+            <a id="dot-5" onclick="dot5_active()" href="#pic5"><div class="dot dot5"></div></a>
+            <a id="dot-6" onclick="dot6_active()" href="#pic6"><div class="dot dot6"></div></a>
             
         </div>
     </header>

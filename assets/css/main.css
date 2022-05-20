@@ -633,12 +633,9 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all 0.18s ease-in-out;
 }
 
-.header {
-  margin-top: 150px;
-}
 .header .header__carrousel {
   width: 100%;
-  height: 400px;
+  height: 550px;
   overflow-x: scroll;
   white-space: nowrap;
   overflow: hidden;
@@ -646,7 +643,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all 5s ease-in-out;
 }
 .header .header__carrousel__text {
-  padding: 80px 10px;
+  padding: 230px 10px 80px 10px;
   width: 100%;
   max-width: 500px;
   position: absolute;
@@ -669,6 +666,10 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 20px 3px;
   border-radius: 5px;
   background-color: #d6d6d6;
+}
+
+.active_dot {
+  background-color: #e8c858 !important;
 }
 
 .sectxt {
