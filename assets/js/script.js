@@ -31,7 +31,7 @@ function StopSlide() {
 
 }
 
-var SlideTime = 4000;
+var SlideTime = 5000;
 var Yposition = 10;
 var MyTimer = setInterval(slide, SlideTime);
 

@@ -690,7 +690,7 @@ body::-webkit-scrollbar-thumb:hover {
   white-space: nowrap;
   overflow: hidden;
   scroll-behavior: smooth;
-  transition: all 5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .header .header__carrousel__text {
   padding: 230px 50px 80px 10px;
@@ -742,6 +742,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .secimgleft p, .secimgright p {
   margin: auto 80px;
+}
+
+.toolkit-sec {
+  margin-top: 200px;
+}
+.toolkit-sec img {
+  object-fit: cover;
+  max-width: 100%;
+  position: absolute;
 }
 
 .footer {
