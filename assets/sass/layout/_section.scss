@@ -19,10 +19,48 @@
 
 .toolkit-sec {
     margin-top: 200px;
-    
-    img {
-        object-fit: cover;
-        max-width: 100%;
-        position: absolute;
+    .row {
+        margin-bottom: 50px;
+        transition: all .15s ease-in-out;
+        -webkit-box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.05); 
+        box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.05);
+        &:hover{
+            -webkit-box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.2); 
+            box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.2);
+            transition: all .15s ease-in-out;
+        }
     }
+    .toolkit-txt{
+        padding: 50px 0;
+        background-color: $white;
+    }
+    .gradiante {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to left, rgba(256, 256, 256, 1), rgba(256, 256, 256, 0));
+    }
+    .toolkik-img1 {
+        background-image: url(../img/test.jpg);
+        
+    }
+    .toolkik-img2 {
+        background-image: url(../img/test.jpg);
+        
+    }
+    .toolkik-img3 {
+        background-image: url(../img/test.jpg);
+        
+    }
+    .toolkik-img4 {
+        background-image: url(../img/test.jpg);
+    }
+    a {
+        color: $avocado;
+        transition: all .2s ease-in-out;
+        &:hover {
+            color: $mustard;
+            transition: all .2s ease-in-out;
+        }
+    }
+
 }
