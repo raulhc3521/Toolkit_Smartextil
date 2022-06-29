@@ -2,6 +2,7 @@
 
 @keyframes fadein {
     0% {
+        display: block;
         opacity: 0;
     }
     100% {

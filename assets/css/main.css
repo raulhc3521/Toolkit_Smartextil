@@ -524,6 +524,7 @@ span {
 }
 @keyframes fadein {
   0% {
+    display: block;
     opacity: 0;
   }
   100% {
@@ -752,7 +753,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: inline-block;
   width: 10px;
   height: 10px;
-  margin: 6px 3px 0px 3px;
+  margin: 20px 3px 0px 3px;
   border-radius: 5px;
   background-color: #d6d6d6;
 }
