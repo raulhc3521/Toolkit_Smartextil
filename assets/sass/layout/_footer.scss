@@ -1,8 +1,49 @@
 .footer {
     margin-top: 100px;
     background-color: $light-gray;
+    a img{
+        &:hover {
+            animation: baile-logo .5s infinite;
+        }
+    }
 
     .footer__container {
-        padding: 50px 0;
+        padding: 50px 0 20px 0;
+        .logoSTfooter {
+            //vertical-align: middle;
+            margin: auto 0;
+        }
+    }
+    .footer-logo {
+        img {
+            max-width: 250px;
+            max-height: 200px;
+            margin: 10px;
+            vertical-align: middle;
+        }
+        .img-gob{
+            max-width: 150px ;
+        }
+        .financiado {
+            margin-top: 10px;
+        }
+        
+    }
+    .box {
+        display: flex;
+    }
+    .apoyados {
+        max-width: 230px;
+        max-height: 200px;
+        margin: 0;
+    }
+    .siguenos {
+        margin-top: 20px;
+        img {
+            margin: 10px;
+        }        
+    }
+    h6 {
+        padding-bottom: 6px;
     }
 }

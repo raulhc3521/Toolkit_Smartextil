@@ -1,20 +1,28 @@
 .sectxt {
-    margin: 100px auto;
+    margin: 150px auto 200px auto;
     text-align: center;
     h4 {
-        margin: 50px 200px;
+        margin: 50px 150px;
         line-height: 33px;
     }
 }
 
 .secimgleft, .secimgright {
-    margin: 100px auto;
+    margin: 80px auto;
     img {
         width: 100%;
+        max-height: 350px;
+        object-fit: cover;
     }
-    p {
-        margin: auto 80px;
-    }
+    
+}
+.secimgleft p{
+    margin: auto 0 auto 60px;
+    text-align: justify;
+}
+.secimgright p{
+    margin: auto 60px auto 0;
+    text-align: justify;
 }
 
 .toolkit-sec {
@@ -39,21 +47,23 @@
         height: 100%;
         background: linear-gradient(to left, rgba(256, 256, 256, 1), rgba(256, 256, 256, 0));
     }
+    .toolkik-img1, .toolkik-img2, .toolkik-img3, .toolkik-img4 {
+        background-size: 100%;
+        background-position: right;
+    }
     .toolkik-img1 {
-        background-image: url(../img/test.jpg);
-        
+        background-image: url(../img/toolkit-biomaterial.JPG);
     }
     .toolkik-img2 {
-        background-image: url(../img/test.jpg);
-        
+        background-image: url(../img/toolkit-fabricaciondigital.JPG);        
     }
     .toolkik-img3 {
-        background-image: url(../img/test.jpg);
-        
+        background-image: url(../img/toolkit-electronica.JPG);
     }
     .toolkik-img4 {
-        background-image: url(../img/test.jpg);
+        background-image: url(../img/toolkit-integración.JPG);
     }
+
     a {
         color: $avocado;
         transition: all .2s ease-in-out;

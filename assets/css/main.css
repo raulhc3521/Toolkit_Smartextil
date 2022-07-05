@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -292,6 +293,14 @@ body {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 /*h1, h2, h3, h4, h5 {
     margin-bottom: 3px;
 }*/
@@ -540,6 +549,25 @@ span {
     display: none;
   }
 }
+@keyframes baile-logo {
+  0% {
+    transform: rotate(0deg);
+    filter: brightness(1);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    filter: brightness(1.7);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    filter: brightness(1);
+  }
+}
 body::-webkit-scrollbar {
   width: 10px; /* width of the entire scrollbar */
 }
@@ -565,9 +593,9 @@ body::-webkit-scrollbar-thumb:hover {
   color: #373737;
 }
 .navbar .navbar__logo img {
-  margin-top: 20px;
-  max-width: 100%;
-  height: 100%;
+  margin-top: 30px;
+  width: 100%;
+  max-height: 150px;
 }
 .navbar .navtxt {
   margin-top: 60px;
@@ -638,7 +666,8 @@ body::-webkit-scrollbar-thumb:hover {
   position: absolute;
   right: 0;
   text-align: right;
-  background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  box-shadow: -8px 0 50px 50px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
 }
 .header .header__carrousel__text h1 {
   margin-bottom: 10px;
@@ -667,22 +696,31 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .sectxt {
-  margin: 100px auto;
+  margin: 150px auto 200px auto;
   text-align: center;
 }
 .sectxt h4 {
-  margin: 50px 200px;
+  margin: 50px 150px;
   line-height: 33px;
 }
 
 .secimgleft, .secimgright {
-  margin: 100px auto;
+  margin: 80px auto;
 }
 .secimgleft img, .secimgright img {
   width: 100%;
+  max-height: 350px;
+  object-fit: cover;
 }
-.secimgleft p, .secimgright p {
-  margin: auto 80px;
+
+.secimgleft p {
+  margin: auto 0 auto 60px;
+  text-align: justify;
+}
+
+.secimgright p {
+  margin: auto 60px auto 0;
+  text-align: justify;
 }
 
 .toolkit-sec {
@@ -708,17 +746,21 @@ body::-webkit-scrollbar-thumb:hover {
   height: 100%;
   background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
 }
+.toolkit-sec .toolkik-img1, .toolkit-sec .toolkik-img2, .toolkit-sec .toolkik-img3, .toolkit-sec .toolkik-img4 {
+  background-size: 100%;
+  background-position: right;
+}
 .toolkit-sec .toolkik-img1 {
-  background-image: url(../img/test.jpg);
+  background-image: url(../img/toolkit-biomaterial.JPG);
 }
 .toolkit-sec .toolkik-img2 {
-  background-image: url(../img/test.jpg);
+  background-image: url(../img/toolkit-fabricaciondigital.JPG);
 }
 .toolkit-sec .toolkik-img3 {
-  background-image: url(../img/test.jpg);
+  background-image: url(../img/toolkit-electronica.JPG);
 }
 .toolkit-sec .toolkik-img4 {
-  background-image: url(../img/test.jpg);
+  background-image: url(../img/toolkit-integración.JPG);
 }
 .toolkit-sec a {
   color: #6cc027;
@@ -733,8 +775,43 @@ body::-webkit-scrollbar-thumb:hover {
   margin-top: 100px;
   background-color: #d6d6d6;
 }
+.footer a img:hover {
+  animation: baile-logo 0.5s infinite;
+}
 .footer .footer__container {
-  padding: 50px 0;
+  padding: 50px 0 20px 0;
+}
+.footer .footer__container .logoSTfooter {
+  margin: auto 0;
+}
+.footer .footer-logo img {
+  max-width: 250px;
+  max-height: 200px;
+  margin: 10px;
+  vertical-align: middle;
+}
+.footer .footer-logo .img-gob {
+  max-width: 150px;
+}
+.footer .footer-logo .financiado {
+  margin-top: 10px;
+}
+.footer .box {
+  display: flex;
+}
+.footer .apoyados {
+  max-width: 230px;
+  max-height: 200px;
+  margin: 0;
+}
+.footer .siguenos {
+  margin-top: 20px;
+}
+.footer .siguenos img {
+  margin: 10px;
+}
+.footer h6 {
+  padding-bottom: 6px;
 }
 
 .gallery .gallery__img-container {
