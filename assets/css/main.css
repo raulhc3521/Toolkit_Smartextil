@@ -363,9 +363,9 @@ ol {
 }
 
 figcaption {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 18px;
-  color: #d6d6d6;
+  color: #909090;
   font-weight: 300;
   font-style: italic;
   padding-bottom: 20px;
@@ -695,6 +695,16 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #e8c858 !important;
 }
 
+.title {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.definicion {
+  max-height: 500px;
+  width: 100%;
+}
+
 .sectxt {
   margin: 150px auto 200px auto;
   text-align: center;
@@ -706,6 +716,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .secimgleft, .secimgright {
   margin: 80px auto;
+}
+.secimgleft .imgL, .secimgleft .imgR, .secimgright .imgL, .secimgright .imgR {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .secimgleft img, .secimgright img {
   width: 100%;
@@ -851,9 +866,6 @@ body::-webkit-scrollbar-thumb:hover {
   margin-top: 200px;
   text-align: center;
 }
-.contactanos h2 {
-  margin-bottom: 50px;
-}
 .contactanos button {
   font-family: "Fredoka", sans-serif;
   color: #373737;
@@ -898,6 +910,31 @@ body::-webkit-scrollbar-thumb:hover {
 textarea:focus, input:focus {
   outline: none !important;
   border: solid 1px #373737 !important;
+}
+
+.resultados video {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+.resultados .gallery__img-container img {
+  width: 100%;
+  max-height: 100px;
+  opacity: 1;
+  margin: 0 auto;
+  display: none;
+}
+.resultados .carrousel_dot {
+  width: fit-content;
+}
+.resultados .carrousel_dot .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 20px 3px 0px 3px;
+  border-radius: 5px;
+  background-color: #d6d6d6;
 }
 
 /*# sourceMappingURL=main.css.map */

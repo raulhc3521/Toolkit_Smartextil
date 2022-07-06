@@ -22,7 +22,7 @@
                 <div class="col-4 navbar__logo"><a href="index.html"><img src="assets/img/logo_smartextil_horizontal.svg" alt="logo smartextil"></a></div>
                 <div class="col-2"><a class="navtxt" href="proceso_creativo.html">Proceso de Creación</a></div>
 
-                <div class="col-2" ><a class="navtxt  nav_active" href="contactanos.html">Resultados</a></div>
+                <div class="col-2" ><a class="navtxt  nav_active" href="resultados.html">Resultados</a></div>
 
                 <div class="col-2"><a class="navtxt" href="toolkit.html">Toolkit</a></div>
                     
@@ -31,13 +31,29 @@
         </div>
     </nav>
 
-    <section class="resultados">
-        <div class="resultados_video">
-            <video src=""></video>
-        </div>
-        <div class="resultados_galeria">
+    <section class="resultados pt-100">
 
+        <div class="resultados_video">
+            <video autoplay loop muted src="assets/img/videos/timelapse equipo.mp4"></video>
         </div>
+
+        <div class="resultados_galeria">
+            <div onclick="uncheck()" class="container_fluid">
+                <div class="gallery__img-container">
+                    <img src="assets/img/test.jpg" alt="" class="galimg1 minop activeimg">
+                    <img src="assets/img/test.jpg" alt="" class="galimg2 minop">
+                    <img src="assets/img/test.jpg" alt="" class="galimg3 minop">
+                    <img src="assets/img/test.jpg" alt="" class="galimg4 minop">
+                </div>
+                <div class="carrousel_dot m-auto">
+                    <div class="dot dot1 active_dot" onclick="clickdot1()"></div>
+                    <div class="dot dot2" onclick="clickdot2()"></div>
+                    <div class="dot dot3" onclick="clickdot3()"></div>
+                    <div class="dot dot4" onclick="clickdot4()"></div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <footer class="footer container_fluid" onclick="uncheck()">

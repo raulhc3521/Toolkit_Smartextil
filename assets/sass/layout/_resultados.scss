@@ -1,0 +1,28 @@
+.resultados {
+    video {
+        width: 100%;
+        max-height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .gallery__img-container {
+        img {
+            width: 100%;
+            max-height: 100px;
+            opacity: 1;
+            margin: 0 auto;
+            display: none;
+        }
+    }
+    .carrousel_dot {
+        width: fit-content;
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 20px 3px 0px 3px;
+            border-radius: 5px;
+            background-color: $light-gray;
+        }        
+    }
+}
