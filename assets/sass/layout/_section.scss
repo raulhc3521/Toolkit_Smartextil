@@ -7,11 +7,14 @@
     width: 100%;
 }
 .sectxt {
-    margin: 150px auto 200px auto;
+    margin: 150px auto 150px auto;
     text-align: center;
     h4 {
         margin: 50px 150px;
         line-height: 33px;
+    }
+    img {
+        object-fit: cover;
     }
 }
 
@@ -22,20 +25,30 @@
         margin: 0;
         padding: 0;
     }
-    img {
+    img, video {
         width: 100%;
         max-height: 350px;
         object-fit: cover;
     }
     
 }
-.secimgleft p{
-    margin: auto 0 auto 60px;
+.secimgleft .img-txt{
+    margin: auto 10px auto 60px;
     text-align: justify;
 }
-.secimgright p{
-    margin: auto 60px auto 0;
+.secimgright .img-txt{
+    margin: auto 60px auto 10px;
     text-align: justify;
+}
+
+.fabricacion {
+    video {
+        margin: 0 auto;
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
 .toolkit-sec {
@@ -52,8 +65,12 @@
         }
     }
     .toolkit-txt{
-        padding: 50px 0;
+        
+        padding: 20px 10px;
+        height: 280px;
         background-color: $white;
+        text-align: right;
+        vertical-align: middle;
     }
     .gradiante {
         width: 100%;
@@ -63,18 +80,21 @@
     .toolkik-img1, .toolkik-img2, .toolkik-img3, .toolkik-img4 {
         background-size: 100%;
         background-position: right;
+        height: 280px;
+        display: flexbox;
+        box-sizing: content-box;
     }
     .toolkik-img1 {
-        background-image: url(../img/toolkit-biomaterial.JPG);
+        background-image: url(../img/img-toolkit-biomaterial.JPG);
     }
     .toolkik-img2 {
-        background-image: url(../img/toolkit-fabricaciondigital.JPG);        
+        background-image: url(../img/img-toolkit-fabricaciondigital.JPG);        
     }
     .toolkik-img3 {
-        background-image: url(../img/toolkit-electronica.JPG);
+        background-image: url(../img/img-toolkit-electronica.JPG);
     }
     .toolkik-img4 {
-        background-image: url(../img/toolkit-integración.JPG);
+        background-image: url(../img/img-toolkit-integración.JPG);
     }
 
     a {

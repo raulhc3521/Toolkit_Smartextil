@@ -301,13 +301,17 @@ body {
   text-align: right;
 }
 
+.end {
+  margin-top: 10px;
+}
+
 /*h1, h2, h3, h4, h5 {
     margin-bottom: 3px;
 }*/
 a {
   font-size: 16px;
   color: #909090;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   color: #e8c858;
@@ -364,11 +368,10 @@ ol {
 
 figcaption {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 14px;
   color: #909090;
   font-weight: 300;
   font-style: italic;
-  padding-bottom: 20px;
 }
 
 br {
@@ -582,7 +585,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .navbar {
   width: 100%;
-  height: 150px;
+  height: 100px;
   position: fixed;
   top: 0;
   background-color: #ffffff;
@@ -595,10 +598,10 @@ body::-webkit-scrollbar-thumb:hover {
 .navbar .navbar__logo img {
   margin-top: 30px;
   width: 100%;
-  max-height: 150px;
+  max-height: 60px;
 }
 .navbar .navtxt {
-  margin-top: 60px;
+  margin-top: 50px;
   float: right;
   height: 100%;
   width: 100%;
@@ -660,7 +663,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all 1s ease-in-out;
 }
 .header .header__carrousel__text {
-  padding: 230px 50px 80px 10px;
+  padding: 180px 50px 80px 10px;
   width: 100%;
   max-width: 500px;
   position: absolute;
@@ -706,12 +709,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .sectxt {
-  margin: 150px auto 200px auto;
+  margin: 150px auto 150px auto;
   text-align: center;
 }
 .sectxt h4 {
   margin: 50px 150px;
   line-height: 33px;
+}
+.sectxt img {
+  object-fit: cover;
 }
 
 .secimgleft, .secimgright {
@@ -722,20 +728,28 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0;
   padding: 0;
 }
-.secimgleft img, .secimgright img {
+.secimgleft img, .secimgleft video, .secimgright img, .secimgright video {
   width: 100%;
   max-height: 350px;
   object-fit: cover;
 }
 
-.secimgleft p {
-  margin: auto 0 auto 60px;
+.secimgleft .img-txt {
+  margin: auto 10px auto 60px;
   text-align: justify;
 }
 
-.secimgright p {
-  margin: auto 60px auto 0;
+.secimgright .img-txt {
+  margin: auto 60px auto 10px;
   text-align: justify;
+}
+
+.fabricacion video {
+  margin: 0 auto;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .toolkit-sec {
@@ -753,8 +767,11 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all 0.15s ease-in-out;
 }
 .toolkit-sec .toolkit-txt {
-  padding: 50px 0;
+  padding: 20px 10px;
+  height: 280px;
   background-color: #ffffff;
+  text-align: right;
+  vertical-align: middle;
 }
 .toolkit-sec .gradiante {
   width: 100%;
@@ -764,18 +781,21 @@ body::-webkit-scrollbar-thumb:hover {
 .toolkit-sec .toolkik-img1, .toolkit-sec .toolkik-img2, .toolkit-sec .toolkik-img3, .toolkit-sec .toolkik-img4 {
   background-size: 100%;
   background-position: right;
+  height: 280px;
+  display: flexbox;
+  box-sizing: content-box;
 }
 .toolkit-sec .toolkik-img1 {
-  background-image: url(../img/toolkit-biomaterial.JPG);
+  background-image: url(../img/img-toolkit-biomaterial.JPG);
 }
 .toolkit-sec .toolkik-img2 {
-  background-image: url(../img/toolkit-fabricaciondigital.JPG);
+  background-image: url(../img/img-toolkit-fabricaciondigital.JPG);
 }
 .toolkit-sec .toolkik-img3 {
-  background-image: url(../img/toolkit-electronica.JPG);
+  background-image: url(../img/img-toolkit-electronica.JPG);
 }
 .toolkit-sec .toolkik-img4 {
-  background-image: url(../img/toolkit-integración.JPG);
+  background-image: url(../img/img-toolkit-integración.JPG);
 }
 .toolkit-sec a {
   color: #6cc027;
@@ -830,11 +850,13 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .gallery .gallery__img-container {
-  max-width: 80%;
   margin: 0 auto;
 }
 .gallery .gallery__img-container img {
   width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  object-position: center;
   opacity: 1;
   margin: 0 auto;
   display: none;
@@ -914,13 +936,13 @@ textarea:focus, input:focus {
 
 .resultados video {
   width: 100%;
-  max-height: 100vh;
+  max-height: 85vh;
   object-fit: cover;
   object-position: center;
 }
 .resultados .gallery__img-container img {
   width: 100%;
-  max-height: 100px;
+  max-height: 600px;
   opacity: 1;
   margin: 0 auto;
   display: none;
@@ -935,6 +957,29 @@ textarea:focus, input:focus {
   margin: 20px 3px 0px 3px;
   border-radius: 5px;
   background-color: #d6d6d6;
+}
+
+.integrantes .integrantes_card {
+  padding: 0 40px;
+  text-align: center;
+}
+.integrantes .integrantes_card .avatar img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 150px;
+}
+.integrantes .integrantes_card h4 {
+  padding: 10px 0 0 5px;
+}
+.integrantes .integrantes_card p {
+  color: #e8c858;
+  font-weight: 600;
+}
+.integrantes .integrantes_card h6 {
+  color: #909090;
+  line-height: 18px;
 }
 
 /*# sourceMappingURL=main.css.map */

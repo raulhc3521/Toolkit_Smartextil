@@ -12,6 +12,9 @@ body {
 .text-right {
     text-align: right;
 }
+.end {
+    margin-top: 10px;
+}
 
 /*h1, h2, h3, h4, h5 {
     margin-bottom: 3px;
@@ -20,7 +23,8 @@ body {
 a {
     font-size: $a-size;
     color: $gray;
-    text-decoration: none;
+    text-decoration: underline;
+
     &:hover {
         color: $mustard;
     }
@@ -68,11 +72,10 @@ ol{
 }
 figcaption {
     font-size: $h5-size;
-    line-height: 18px;
+    line-height: 14px;
     color: $gray;
     font-weight: $light;
     font-style: italic;
-    padding-bottom: 20px;
 }
 br{
       line-height: 20px;  

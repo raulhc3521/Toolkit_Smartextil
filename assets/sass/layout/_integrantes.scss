@@ -1,0 +1,26 @@
+.integrantes {
+    .integrantes_card {
+        padding: 0 40px;
+        .avatar {
+            img {
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 150px;
+            }
+        }
+        text-align: center;
+        h4 {
+            padding: 10px 0 0 5px;
+        }
+        p {
+            color: $mustard;
+            font-weight: $bold;
+        }
+        h6 {
+            color: $gray;
+            line-height: 18px;
+        }
+    }
+}
