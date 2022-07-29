@@ -79,6 +79,10 @@ html {
   padding-top: 100px;
 }
 
+.bgc-white {
+  background-color: #ffffff;
+}
+
 .container {
   width: 90%;
   margin-left: auto;
@@ -767,8 +771,8 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all 0.15s ease-in-out;
 }
 .toolkit-sec .toolkit-txt {
-  padding: 20px 10px;
-  height: 280px;
+  padding: 15px 10px;
+  max-height: 300px;
   background-color: #ffffff;
   text-align: right;
   vertical-align: middle;
@@ -781,7 +785,7 @@ body::-webkit-scrollbar-thumb:hover {
 .toolkit-sec .toolkik-img1, .toolkit-sec .toolkik-img2, .toolkit-sec .toolkik-img3, .toolkit-sec .toolkik-img4 {
   background-size: 100%;
   background-position: right;
-  height: 280px;
+  height: 300px;
   display: flexbox;
   box-sizing: content-box;
 }
@@ -858,6 +862,7 @@ body::-webkit-scrollbar-thumb:hover {
   object-fit: cover;
   object-position: center;
   opacity: 1;
+  z-index: 1;
   margin: 0 auto;
   display: none;
 }
@@ -871,6 +876,15 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 20px 3px 0px 3px;
   border-radius: 5px;
   background-color: #d6d6d6;
+}
+
+.back-arrow {
+  position: relative;
+  bottom: -700px;
+  height: 700px;
+  float: left;
+  background-color: #ffffff;
+  opacity: 0.2;
 }
 
 /*.minop {
@@ -942,7 +956,8 @@ textarea:focus, input:focus {
 }
 .resultados .gallery__img-container img {
   width: 100%;
-  max-height: 600px;
+  height: 700px;
+  object-fit: cover;
   opacity: 1;
   margin: 0 auto;
   display: none;

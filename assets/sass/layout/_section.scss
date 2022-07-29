@@ -64,10 +64,10 @@
             transition: all .15s ease-in-out;
         }
     }
+   
     .toolkit-txt{
-        
-        padding: 20px 10px;
-        height: 280px;
+        padding: 15px 10px;
+        max-height: 300px;
         background-color: $white;
         text-align: right;
         vertical-align: middle;
@@ -80,7 +80,7 @@
     .toolkik-img1, .toolkik-img2, .toolkik-img3, .toolkik-img4 {
         background-size: 100%;
         background-position: right;
-        height: 280px;
+        height: 300px;
         display: flexbox;
         box-sizing: content-box;
     }

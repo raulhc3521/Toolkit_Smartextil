@@ -1,6 +1,5 @@
 .gallery {
     .gallery__img-container {
-        
         margin: 0 auto;
 
         img {
@@ -9,6 +8,7 @@
             object-fit: cover;
             object-position: center;
             opacity: 1;
+            z-index: 1;
             margin: 0 auto;
             display: none;
         }
@@ -25,7 +25,14 @@
         }        
     }
 }
-
+.back-arrow {
+    position: relative;
+    bottom: -700px;
+    height: 700px;
+    float: left;
+    background-color: $white;
+    opacity: 0.2;
+}
 
 /*.minop {
     opacity: 0;
