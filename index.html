@@ -48,7 +48,7 @@
     -->
 
 
-    <nav class="navbar">
+    <nav class="navbar d-none d-block-md container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-4 navbar__logo"><a href="index.html"><img src="assets/img/logo_smartextil_horizontal.svg" alt="logo smartextil"></a></div>
@@ -62,12 +62,20 @@
             </div>
         </div>
     </nav>
+    <nav class="navbar d-none-md container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 navbar__logo"><a href="index.html"><img src="assets/img/logo_smartextil_horizontal.svg" alt="logo smartextil"></a></div>
+                <div class="col-4"></div>
+                <div class="col-2 fl_r"><a class="navtxt burger" href="proceso_creativo.html">|||</a></div>
+            </div>
+        </div>
+    </nav>
 
     <header class="header container_fluid" onclick="uncheck()">
-        <div class="header__carrousel__text">
+        <div class="header__carrousel__text d-none d-block-lg">
             <h1>SMARTEXTIL</h1>
-            <h4>Es un proyecto financiado por el Fondo Nacional de Desarrollo Cultural y las Artes, Convocatoria 2021. <br>Este proyecto busca la integración de Tecnología y Diseño mediante la vinculación de Biomateriales, Electrónica embebida y Fabricación Digital.
-                  </h4>
+            <h4>Es un proyecto financiado por el Fondo Nacional de Desarrollo Cultural y las Artes, Convocatoria 2021. <br>Este proyecto busca la integración de Tecnología y Diseño mediante la vinculación de Biomateriales, Electrónica embebida y Fabricación Digital.</h4>
         </div>
         <div class="header__carrousel">            
             <img class="header__carrousel__img" id="pic1" src="assets/img/carrousel/carrousel1.jpg" alt="">
@@ -76,6 +84,11 @@
             <img class="header__carrousel__img" id="pic4" src="assets/img/carrousel/carrousel4.jpg" alt="">
             <img class="header__carrousel__img" id="pic5" src="assets/img/carrousel/carrousel5.jpg" alt="">
             <img class="header__carrousel__img" id="pic6" src="assets/img/carrousel/carrousel6.jpg" alt="">
+        </div>
+        <div class="header__carrousel__text d-block d-none-lg">
+            <h1>SMARTEXTIL</h1>
+            <h4>Es un proyecto financiado por el Fondo Nacional de Desarrollo Cultural y las Artes, Convocatoria 2021. <br>Este proyecto busca la integración de Tecnología y Diseño mediante la vinculación de Biomateriales, Electrónica embebida y Fabricación Digital.
+                  </h4>
         </div>
         <div class="carrousel_dot m-auto">
             <a id="dot-1" onclick="dot1_active()" href="#pic1"><div class="dot dot1 active_dot"></div></a>
@@ -93,19 +106,19 @@
 
     <section class="secimgleft container" onclick="uncheck()">
         <div class="row">
-            <div class="col-6 imgL">
+            <div class="col-12 col-md-6 imgL">
                 <img src="assets/img/bolsoabierto.JPG" alt="">
                 <figcaption>Imagen del armado del bolso.</figcaption>
             </div>
-            <p class="col-6 text-right img-txt">Con la innovación de nuevos materiales se abre un campo para la competitividad sectorial integrando a diseñadores, ingenieros y profesionales de diversas disciplinas, abarcando de esta manera distintos campos de aplicación: prendas, calzado, medicina y deportes, entre otros. A partir de esto, la disciplina del diseño ejecuta una función integradora con otras disciplinas, promoviendo la búsqueda de nuevos lenguajes plásticos e innovadores.</p>
+            <p class="col-12 col-md-6 text-right img-txt">Con la innovación de nuevos materiales se abre un campo para la competitividad sectorial integrando a diseñadores, ingenieros y profesionales de diversas disciplinas, abarcando de esta manera distintos campos de aplicación: prendas, calzado, medicina y deportes, entre otros. A partir de esto, la disciplina del diseño ejecuta una función integradora con otras disciplinas, promoviendo la búsqueda de nuevos lenguajes plásticos e innovadores.</p>
         </div>
     </section>
 
     <section class="secimgright container" onclick="uncheck()">
         <div class="row">
-            <p class="col-6 text-left img-txt">Creamos 3 prendas de vestir basadas en la integración de materiales y tecnología, vinculando de biomateriales, electrónica embebida y fabricación digital. De igual forma, se trabajó en un kit de desarrollo (toolkit) con la información necesaria para la replicabilidad de una de estas prendas, fomentando la fabricación distribuida. Además, se realizó un fashion film al que puedes acceder desde <a href="">acá</a>.</p>
-            <div class="col-6 imgR">
-                <img class="col-6" src="assets/img/posiciónledvestido.JPG" alt="">
+            <p class="col-12 col-md-6 text-left img-txt">Creamos 3 prendas de vestir basadas en la integración de materiales y tecnología, vinculando de biomateriales, electrónica embebida y fabricación digital. De igual forma, se trabajó en un kit de desarrollo (toolkit) con la información necesaria para la replicabilidad de una de estas prendas, fomentando la fabricación distribuida. Además, se realizó un fashion film al que puedes acceder desde <a href="">acá</a>.</p>
+            <div class="col-12 col-md-6 imgR">
+                <img class="col-12" src="assets/img/posiciónledvestido.JPG" alt="">
                 <figcaption>Definición de la posición de las luces LED.</figcaption>
             </div>
             
@@ -114,44 +127,44 @@
 
     <section class="secimgleft container" onclick="uncheck()">
         <div class="row">
-            <div class="col-6">
-                <img class="col-6" src="assets/img/matiashernan.jpg" alt="">
+            <div class="col-12 col-md-6">
+                <img class="col-12" src="assets/img/matiashernan.jpg" alt="">
                 <figcaption>Equipo Smartextil trabajando en conjunto en el HUB de Innovación UTEM.</figcaption>
             </div>
-            <p class="col-6 text-right img-txt">Tabajamos junto a Matias Hernan, Diseñador chileno enfocado en buscar nuevas formas de construir, investigar y propagar su arte. Sus diseños son netamente futuristas y tecnológicos, con materiales sintéticos como la lycra, algodón, mallas, cuero y neoprene, todos estos con paletas de colores saturadas desde el naranja, celeste, verde y morado. <br>Ha desarrollado más de 7 colecciones, muchas de ellas en base a colaboraciones con artistas, diseñadores visuales, músicos, pintores, entre otros. Participó en Project Runway 2014, obteniendo el 1 lugar. Junto a ProteinLab UTEM desarrolló el vestido que lució Carolina de Moras en el Festival de Viña del Mar 2019 y parte de la colección LINKING MH, en donde en las dos instancias se trabajó con el concepto de Fabricación digital</p>
+            <p class="col-12 col-md-6 text-right img-txt">Tabajamos junto a Matias Hernan, Diseñador chileno enfocado en buscar nuevas formas de construir, investigar y propagar su arte. Sus diseños son netamente futuristas y tecnológicos, con materiales sintéticos como la lycra, algodón, mallas, cuero y neoprene, todos estos con paletas de colores saturadas desde el naranja, celeste, verde y morado. <br>Ha desarrollado más de 7 colecciones, muchas de ellas en base a colaboraciones con artistas, diseñadores visuales, músicos, pintores, entre otros. Participó en Project Runway 2014, obteniendo el 1 lugar. Junto a ProteinLab UTEM desarrolló el vestido que lució Carolina de Moras en el Festival de Viña del Mar 2019 y parte de la colección LINKING MH, en donde en las dos instancias se trabajó con el concepto de Fabricación digital</p>
         </div>
     </section>
 
     <section class="integrantes container pt-100">
         <h2 class="title">El Equipo SMARTEXTIL</h2>
         <div class="row">
-            <div class="col-4 integrantes_card">
+            <div class="col-12 col-md-4 integrantes_card">
                 <div class="avatar"><img src="assets/img/equipo/hectorTorres.jpg" alt=""></div>
                 <h4>Dr. Hector Torres</h4>
                 <p>Director HUB de Innovación UTEM</p>
                 <!--<h6>Especialista en Biomateriales</h6>-->
             </div>
-            <div class="col-4 integrantes_card">
+            <div class="col-12 col-md-4 integrantes_card">
                 <div class="avatar"><img src="assets/img/equipo/macarenaValenzuela.jpg" alt=""></div>
                 <h4>Dra. Macarena Valenzuela</h4>
                 <p>Directora ProteinLab</p>
             </div>
-            <div class="col-4 integrantes_card">
+            <div class="col-12 col-md-4 integrantes_card">
                 <div class="avatar"><img src="assets/img/equipo/matiasHernan.jpg" alt=""></div>
                 <h4>Matias Hernan</h4>
                 <p>Diseñador de Vestuario</p>
             </div>
-            <div class="col-4 integrantes_card">
+            <div class="col-12 col-md-4 integrantes_card">
                 <div class="avatar"><img src="assets/img/equipo/benjaminDiaz.JPG" alt=""></div>
                 <h4>Benjamin Diaz</h4>
                 <p>Diseñador Industrial</p>
             </div>
-            <div class="col-4 integrantes_card">
+            <div class="col-12 col-md-4 integrantes_card">
                 <div class="avatar"><img src="assets/img/equipo/raulHiueras.jpg" alt=""></div>
                 <h4>Raúl Higueras</h4>
                 <p>Diseñador Industrial | Diseñador UX</p>
             </div>
-            <div class="col-4 integrantes_card">
+            <div class="col-12 col-md-4 integrantes_card">
                 <div class="avatar"><img src="assets/img/equipo/victorMeza.jpg" alt=""></div>
                 <h4>Victor Meza</h4>
                 <p>Ingeniero Electrónico</p>
@@ -167,10 +180,10 @@
     <footer class="footer container_fluid" onclick="uncheck()">
         <div class="footer__container container text-center">
             <div class="row">
-                <div class="col-4 box">
+                <div class="col-12 col-md-4 box">
                     <img class="logoSTfooter" src="assets/img/logo_Smartextil.svg" alt="">
                 </div>
-                <div class="footer-logo col-4">
+                <div class="footer-logo col-12 col-md-4">
                     <div class="col-12">
                         <p>Proyecto desarrollado por:</p>
                         <img src="assets/img/logos/logo_ProteinLab.svg" alt="">
@@ -180,7 +193,7 @@
                         <img class="img-gob" src="assets/img/logos/23_MCAP_RGB-01.png" alt="">
                     </div>
                 </div>
-                <dic class="col-4">
+                <dic class="col-12 col-md-4">
                     <div class="col-12">
                         <p>Apoyado por:</p>
                         <img class="apoyados" src="assets/img/logos/logo-mh.svg" alt="">

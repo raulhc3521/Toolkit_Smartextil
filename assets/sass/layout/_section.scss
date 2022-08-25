@@ -10,7 +10,7 @@
     margin: 150px auto 150px auto;
     text-align: center;
     h4 {
-        margin: 50px 150px;
+        margin: 50px 0px;
         line-height: 33px;
     }
     img {
@@ -33,11 +33,20 @@
     
 }
 .secimgleft .img-txt{
-    margin: auto 10px auto 60px;
+    @media only screen and (min-width: 992px){
+        margin: auto 10px auto 60px;
+        text-align: justify;
+    }
+    margin: auto 10px auto 10px;
     text-align: justify;
+    
 }
 .secimgright .img-txt{
-    margin: auto 60px auto 10px;
+    @media only screen and (min-width: 992px){
+        margin: auto 60px auto 10px;
+        text-align: justify;
+    }
+    margin: auto 10px auto 10px;
     text-align: justify;
 }
 

@@ -10,29 +10,75 @@
         transition: all 1s ease-in-out;
     }
     .header__carrousel__text {
-        padding: 180px 50px 80px 10px;
-        width: 100%;
-        max-width: 500px;
-        position: absolute;
-        right: 0;
-        text-align: right;
-        //background-color: $white;
-        box-shadow: -8px 0 50px 50px rgba(256, 256, 256, .3);
-        background: linear-gradient(to left, 
-        rgba(256, 256, 256, 1),
-        rgba(256, 256, 256, 1), 
-        rgba(256, 256, 256, 1), 
-        rgba(256, 256, 256, 1),
-        rgba(256, 256, 256, 1), 
-        rgba(256, 256, 256, .9), 
-        rgba(256, 256, 256, .8),
-        rgba(256, 256, 256, .7), 
-        rgba(256, 256, 256, .5), 
-        rgba(256, 256, 256, .3));
-        
-        h1{
-            margin-bottom: 10px;
+        padding: 20px 0;
+            width: 100%;
+            position: absolute;
+            min-height: 180px;
+            top: 330px;
+            text-align: center;
+            background: linear-gradient(to top, 
+            rgba(256, 256, 256, 1),
+            rgba(256, 256, 256, 1),
+            rgba(256, 256, 256, 1), 
+            rgba(256, 256, 256, 1), 
+            rgba(256, 256, 256, 1), 
+            rgba(256, 256, 256, 1), 
+            rgba(256, 256, 256, 1), 
+            rgba(256, 256, 256, 1), 
+            rgba(256, 256, 256, .8),
+            rgba(256, 256, 256, .6), 
+            rgba(256, 256, 256, .4), 
+            rgba(256, 256, 256, .2), 
+            rgba(256, 256, 256, 0));
+            
+            h1{
+                margin-top: 40px;
+                font-size: $h3-size;
+            }
+            h4 {
+                font-size: $h5-size;
+                line-height: 16px;
+                width: 95%;
+                margin: 0 auto;
+            }
+
+
+        @media only screen and (min-width: 992px) {
+            padding: 180px 50px 80px 10px;
+            width: 100%;
+            max-width: 500px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-align: right;
+            //background-color: $white;
+            box-shadow: -8px 0 50px 50px rgba(256, 256, 256, .3);
+            background: linear-gradient(to left, 
+            rgba(256, 256, 256, 1),
+            rgba(256, 256, 256, 1), 
+            rgba(256, 256, 256, 1), 
+            rgba(256, 256, 256, 1),
+            rgba(256, 256, 256, 1), 
+            rgba(256, 256, 256, .9), 
+            rgba(256, 256, 256, .8),
+            rgba(256, 256, 256, .7), 
+            rgba(256, 256, 256, .5), 
+            rgba(256, 256, 256, .3));
+            
+            h1{
+                margin-bottom: 10px;
+                font-size: $h1-size;
+            }
+            h4 {
+                font-size: $h4-size;
+                line-height: 30px;
+            }
         }
+
+            
+
+        
+        
     }
     .header__carrousel__img {
         width: 100%;
