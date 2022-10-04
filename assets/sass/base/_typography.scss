@@ -21,7 +21,10 @@ body {
 }*/
 
 a {
-    font-size: $a-size;
+    @media only screen and (min-width: 768px){
+        font-size: $a-size;
+    }
+    font-size: $a-size-m;
     color: $gray;
     text-decoration: underline;
 
@@ -31,33 +34,61 @@ a {
 }
 
 h1 {
-    font-size: $h1-size;
-    line-height: 50px;
-}
-h2 {
-    font-size: $h2-size;
+    @media only screen and (min-width: 768px){
+        font-size: $h1-size;
+        line-height: 50px;
+    }
+    font-size: $h1-size-m;
     line-height: 40px;
 }
-h3 {
-    font-size: $h3-size;
-    font-weight: $regular;
-    line-height: 35px;
-}
-h4 {
-    font-size: $h4-size;
+h2 {
+    @media only screen and (min-width: 768px){
+        font-size: $h2-size;
+        line-height: 40px;
+    }
+    font-size: $h2-size-m;
     line-height: 30px;
 }
+h3 {
+    @media only screen and (min-width: 768px){
+        font-size: $h3-size;
+        line-height: 35px;
+    }
+    font-size: $h3-size-m;
+    font-weight: $regular;
+    line-height: 25px;
+}
+h4 {
+    @media only screen and (min-width: 768px){
+        font-size: $h4-size;
+        line-height: 30px;
+    }
+    font-size: $h4-size-m;
+    line-height: 20px;
+}
 h5 {
-    font-size: $h5-size;
+    @media only screen and (min-width: 768px){
+        font-size: $h5-size;
+        line-height: 16px;
+    }
+    font-size: $h5-size-m;
     line-height: 16px;
 }
 h6 {
-    font-size: $h5-size;
+    @media only screen and (min-width: 768px){
+        font-size: $h6-size;
+        line-height: 14px;
+    }
+    font-size: $h6-size-m;
     line-height: 14px;
 }
 p {
-    font-size: $p-size;
-    line-height: 25px;
+    @media only screen and (min-width: 768px){
+        font-size: $p-size;
+        line-height: 25px;
+    }
+    font-size: $p-size-m;
+    line-height: 15px;
     letter-spacing: 1px;
     padding: 3px 0;
 }
@@ -71,8 +102,12 @@ ol{
     margin: 0;
 }
 figcaption {
-    font-size: $h5-size;
+    @media only screen and (min-width: 768px){
+        font-size: $h5-size;
     line-height: 14px;
+    }
+    font-size: $h6-size;
+    line-height: 12px;
     color: $gray;
     font-weight: $light;
     font-style: italic;

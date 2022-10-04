@@ -19,11 +19,11 @@
 
 </head>
 <body>  
-    <nav class="navbar">
+    <nav class="navbar d-none d-block-md container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-4 navbar__logo"><a href="index.html"><img src="assets/img/logo_smartextil_horizontal.svg" alt="logo smartextil"></a></div>
-                <div class="col-2"><a class="navtxt  nav_active" href="proceso_creativo.html">Proceso de Creación</a></div>
+                <div class="col-2"><a class="navtxt" href="proceso_creativo.html">Proceso de Creación</a></div>
 
                 <div class="col-2" ><a class="navtxt" href="resultados.html">Resultados</a></div>
 
@@ -33,12 +33,32 @@
             </div>
         </div>
     </nav>
+    <nav class="navbar d-none-md container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 navbar__logo"><a href="index.html"><img src="assets/img/logo_smartextil_horizontal.svg" alt="logo smartextil"></a></div>
+                <div class="col-4"></div>
+                <label class="col-2 fl_r" for="burger"><h5 class="navtxt burger">|||</h5></label>
+                <input class="d-none" type="checkbox" id="burger">
+
+                <label class="col-12 colapse d-none-md">
+                    <ul>
+                        <li><a class="navtxt" href="proceso_creativo.html">Proceso de Creación</a></li>
+                        <li><a class="navtxt" href="resultados.html">Resultados</a></li>
+                        <li><a class="navtxt" href="toolkit.html">Toolkit</a></li>
+                        <li><a class="navtxt" href="contactanos.html">Contáctanos</a></li>
+                    </ul>   
+                </label>
+
+            </div>
+        </div>
+    </nav>
 
     <section class="secimgright container pt-100" onclick="uncheck()">
         <h2 class="title">Exploración</h2>
         <div class="row">
-            <p class="col-6 img-txt">La etapa de exploración se abordó desde la diversas perspectivas que se enfoca el proyecto: Biomateriales, Electrónica y Fabricación digital. Desde Biomateriales, la exploración se concentró en la búsqueda de diversos referentes, analizando sus materiales, composición y aplicación, principalmente en vestuario. Desde la Electrónica, se exploró desde las propiedades lumínicas y su vinculación con los biomateriales. Finalmente desde la Fabricación digital, se abordaron las distintas tecnologías y técnicas que se utilizan en el diseño de vestuario.</p>
-            <div class="col-6">
+            <p class="col-12 col-md-6 img-txt">La etapa de exploración se abordó desde la diversas perspectivas que se enfoca el proyecto: Biomateriales, Electrónica y Fabricación digital. Desde Biomateriales, la exploración se concentró en la búsqueda de diversos referentes, analizando sus materiales, composición y aplicación, principalmente en vestuario. Desde la Electrónica, se exploró desde las propiedades lumínicas y su vinculación con los biomateriales. Finalmente desde la Fabricación digital, se abordaron las distintas tecnologías y técnicas que se utilizan en el diseño de vestuario.</p>
+            <div class="col-12 col-md-6">
                 <img src="assets/img/proceso creativo/exploración.png" alt="">
                 <figcaption>Exploración de proyectos relacionados al diseño de vestuario, fabricación digital, electrónica y biomateriales.</figcaption>
             </div>
@@ -72,11 +92,11 @@
     <section class="secimgleft container pt-100" onclick="uncheck()">
         <h2 class="title">Integración</h2>
         <div class="row">
-            <div class="col-6 imgL">
+            <div class="col-12 col-md-6 imgL">
                 <img src="assets/img/proceso creativo/integración.jpg" alt="">
                 <figcaption>Experimentación e integración de Biomateriales, Electrónica y Fabricación Digital.</figcaption>
             </div>
-            <p class="col-6 img-txt">Es muy importante la integración de las diferentes perspectivas que componen el proyecto: Biomateriales, Electrónica y Fabricación digital. A partir de ello, la proyección de los resultados se realizó combinando la investigación, exploración y experimentación desarrollada. Se obtuvieron como resultados diversas muestras de iluminación en el biomaterial, encapsulado de electrónica en biomaterial, efectos visuales provocados por los mismos biomateriales, entre otras muestras que podrán encontrar a lo largo del Toolkit.</p>
+            <p class="col-12 col-md-6 img-txt">Es muy importante la integración de las diferentes perspectivas que componen el proyecto: Biomateriales, Electrónica y Fabricación digital. A partir de ello, la proyección de los resultados se realizó combinando la investigación, exploración y experimentación desarrollada. Se obtuvieron como resultados diversas muestras de iluminación en el biomaterial, encapsulado de electrónica en biomaterial, efectos visuales provocados por los mismos biomateriales, entre otras muestras que podrán encontrar a lo largo del Toolkit.</p>
         </div>
     </section>
 
@@ -97,12 +117,12 @@
         <section class="secimgright container" onclick="uncheck()">
         
             <div class="row">
-                <div class="col-6 img-txt">
+                <div class="col-12 col-md-6 img-txt">
                     <h4>Fabricación Digital</h4>
                     <p>Una vez teniendo claro el camino del proyecto comenzamos a fabricar las diferentes piezas en impresión 3D, en un proceso donde iteramos constantemente las piezas para que cumpliesen su función como corresponde, también utilizamos corte láser para algunas piezas del bolso.</p>
                 </div>
                 
-                <div class="col-6 imgR">
+                <div class="col-12 col-md-6 imgR">
                     <img src="assets/img/proceso creativo/fabricaciónDigital.jpg" alt="">
                     <figcaption>Pruebas de tamaño y formas para el bolso.</figcaption>
                 </div>
@@ -112,11 +132,11 @@
         <section class="secimgleft container" onclick="uncheck()">
             <div class="row">
     
-                <div class="col-6 imgL">
+                <div class="col-12 col-md-6 imgL">
                     <img src="assets/img/proceso creativo/biomateriales.jpg" alt="">
                     <figcaption>Lamina de biomaterial lista para ser cortada.</figcaption>
                 </div>
-                <div class="col-6 img-txt">
+                <div class="col-12 col-md-6 img-txt">
                     <h4>Biomateriales</h4>
                     <p>Utilizamos 3 colores principales en los biomateriales, el amarillo proveniente de las cáscaras de las naranjas, el naranja proveniente de la cáscara de la zanahoria, y el blanco proveniente de la cáscara de huevo. Estos biomateriales van integrados a piezas impresas 3D, generando diversos módulos que generan una interacción dinámica con el paso de la luz.</p>
                 </div>
@@ -124,12 +144,12 @@
         </section>
         <section class="secimgright container" onclick="uncheck()">
             <div class="row">
-                <div class="col-6 img-txt">
+                <div class="col-12 col-md-6 img-txt">
                     <h4>Electrónica</h4>
                     <p>El desarrollo de la electrónica para este proyecto tuvo especial interés en potenciar las propiedades de superficie y luminosidad de los biomateriales. Para ello, con diferentes tipos de materiales orgánicos, se fueron probando las propiedades traslúcidas de los materiales.<br>
                         La electrónica utilizada en este proyecto, en gran medida son placas de desarrollo y de prototipado rápido que nos permiten trabajar en el marco del concepto OpenSource. Puedes encontrar desde placas de la familia ESPRESSIF como de ARDUINO ya sea para manipular un conjunto de más de 200 pixeles distribuidos en una prenda, como también para que puedas armar tu proyecto VISOR con componentes electrónicos de acceso local.</p>
                 </div>
-                <div class="col-6 imgR">                
+                <div class="col-12 col-md-6 imgR">                
                     <img src="assets/img/proceso creativo/electrónica.jpg" alt="">
                     <figcaption>Componentes electrónicos utilizados en el vestido.</figcaption>
                 </div>
@@ -138,11 +158,11 @@
     
         <section class="secimgleft container" onclick="uncheck()">
             <div class="row">
-                <div class="col-6 imgL">
+                <div class="col-12 col-md-6 imgL">
                     <img src="assets/img/proceso creativo/diseñoDeVestuario.JPG" alt="">
                     <figcaption>Matías Hernán definiendo la posición de las laminas de biomaterial sobre el vestido.</figcaption>
                 </div>
-                <div class="col-6 img-txt">
+                <div class="col-12 col-md-6 img-txt">
                     <h4>Diseño de Vestuario</h4>
                     <p>Matías Hernán nos aportó con su amplio conocimiento en Diseño de vestuario, definiendo los tipos de telas a utilizar, los diferentes acabados, las formas de los módulos de biomateriales, su disposición en el traje y la distribución de los distintos componentes, entre otros aportes; generando una pieza textil que nos permita integrar Biomateriales, electrónica y Fabricación digital.</p>
                 </div>
@@ -158,10 +178,10 @@
     <footer class="footer container_fluid" onclick="uncheck()">
         <div class="footer__container container text-center">
             <div class="row">
-                <div class="col-4 box">
+                <div class="col-12 col-md-4 box">
                     <img class="logoSTfooter" src="assets/img/logo_Smartextil.svg" alt="">
                 </div>
-                <div class="footer-logo col-4">
+                <div class="footer-logo col-12 col-md-4">
                     <div class="col-12">
                         <p>Proyecto desarrollado por:</p>
                         <img src="assets/img/logos/logo_ProteinLab.svg" alt="">
@@ -171,7 +191,7 @@
                         <img class="img-gob" src="assets/img/logos/23_MCAP_RGB-01.png" alt="">
                     </div>
                 </div>
-                <dic class="col-4">
+                <dic class="col-12 col-md-4">
                     <div class="col-12">
                         <p>Apoyado por:</p>
                         <img class="apoyados" src="assets/img/logos/logo-mh.svg" alt="">

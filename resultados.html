@@ -19,17 +19,37 @@
 
 </head>
 <body>  
-    <nav class="navbar">
+    <nav class="navbar d-none d-block-md container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-4 navbar__logo"><a href="index.html"><img src="assets/img/logo_smartextil_horizontal.svg" alt="logo smartextil"></a></div>
                 <div class="col-2"><a class="navtxt" href="proceso_creativo.html">Proceso de Creación</a></div>
 
-                <div class="col-2" ><a class="navtxt  nav_active" href="resultados.html">Resultados</a></div>
+                <div class="col-2" ><a class="navtxt" href="resultados.html">Resultados</a></div>
 
                 <div class="col-2"><a class="navtxt" href="toolkit.html">Toolkit</a></div>
                     
                 <div class="col-2" ><a class="navtxt" href="contactanos.html">Contáctanos</a></div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar d-none-md container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 navbar__logo"><a href="index.html"><img src="assets/img/logo_smartextil_horizontal.svg" alt="logo smartextil"></a></div>
+                <div class="col-4"></div>
+                <label class="col-2 fl_r" for="burger"><h5 class="navtxt burger">|||</h5></label>
+                <input class="d-none" type="checkbox" id="burger">
+
+                <label class="col-12 colapse d-none-md">
+                    <ul>
+                        <li><a class="navtxt" href="proceso_creativo.html">Proceso de Creación</a></li>
+                        <li><a class="navtxt" href="resultados.html">Resultados</a></li>
+                        <li><a class="navtxt" href="toolkit.html">Toolkit</a></li>
+                        <li><a class="navtxt" href="contactanos.html">Contáctanos</a></li>
+                    </ul>   
+                </label>
+
             </div>
         </div>
     </nav>
@@ -63,10 +83,10 @@
     <footer class="footer container_fluid" onclick="uncheck()">
         <div class="footer__container container text-center">
             <div class="row">
-                <div class="col-4 box">
+                <div class="col-12 col-md-4 box">
                     <img class="logoSTfooter" src="assets/img/logo_Smartextil.svg" alt="">
                 </div>
-                <div class="footer-logo col-4">
+                <div class="footer-logo col-12 col-md-4">
                     <div class="col-12">
                         <p>Proyecto desarrollado por:</p>
                         <img src="assets/img/logos/logo_ProteinLab.svg" alt="">
@@ -76,7 +96,7 @@
                         <img class="img-gob" src="assets/img/logos/23_MCAP_RGB-01.png" alt="">
                     </div>
                 </div>
-                <dic class="col-4">
+                <dic class="col-12 col-md-4">
                     <div class="col-12">
                         <p>Apoyado por:</p>
                         <img class="apoyados" src="assets/img/logos/logo-mh.svg" alt="">

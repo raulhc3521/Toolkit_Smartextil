@@ -1,9 +1,17 @@
 .navbar {
-    height: 100px;
+    @media only screen and (min-width: 768px){
+        height: 100px;
+        box-shadow: 3px 3px 5px 1px $light-gray;
+    }
+    height: 90px;
     position: fixed;
     top: 0;
     background-color: $white;
     z-index: 90;
+    transition: all 0.3s ease-in-out; 
+    .row {
+        grid-row-gap: 0 !important;
+    }
     a{
         text-decoration: none;
         color: $dark;
@@ -14,8 +22,10 @@
         max-height: 60px;
     }
     .navtxt {
-        //position: absolute;
-        margin-top: 50px;
+        @media only screen and (min-width: 768px){
+            margin-top: 50px;
+        }
+        margin-top: 30px;
         float: right;
         height: 100%;
         width: 100%;
@@ -28,6 +38,24 @@
     .burger {
         margin-top: 10px;
         transform: rotate(90deg);
+    }
+    .colapse {
+        height: 0px;
+        width: 100%;
+        padding: 10px 70px 10px 20px;
+        margin-left: -7%;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out; 
+        background-color: $white;
+        box-shadow: 3px 3px 5px 1px $light-gray; 
+        ul, li{
+            list-style: none;
+        }
+    }
+
+    input:checked ~ .colapse {
+        height: 100%;
+        transition: all 0.3s ease-in-out;   
     }
 }
 
@@ -49,7 +77,7 @@
         background-color: $mayonnaise;
         list-style: none;
         margin: 0 0 0 -3px;
-        padding: 6px;
+        padding: 6px 0;
         z-index: 10;
         a:hover {
             color: $white;

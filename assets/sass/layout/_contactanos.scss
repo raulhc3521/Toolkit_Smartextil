@@ -1,5 +1,5 @@
 .contactanos {
-    margin-top: 200px;
+    margin-top: 150px;
     text-align: center;
     
     button {
@@ -10,7 +10,7 @@
         background-color: $avocado;
         border-radius: 13px;
         border: none;
-        width: 100%;
+        width: 75%;
         height: 30px;
         text-align: center;
         margin: 0 20px;
@@ -22,16 +22,21 @@
         }
     }
     .contactanos__form {
-        width: 40%;
+        @media only screen and (min-width: 992px){
+            width: 40%;
+            margin: 0 auto;
+        }
+        width: 80%;
         margin: 0 auto;
         .input-name, .input-mail, .input-message {
-            width: 100%;
-            max-width: 100%;margin: 10px;
+            width: 90%;
+            margin: 10px;
             font-family: 'Fredoka', sans-serif;
             color: $dark;
             border-radius: 13px;
             border: solid 1px $gray;
             padding: 0 10px;
+            display: block;
             
         }
         .input-message {

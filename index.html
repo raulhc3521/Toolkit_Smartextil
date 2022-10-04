@@ -67,7 +67,18 @@
             <div class="row">
                 <div class="col-6 navbar__logo"><a href="index.html"><img src="assets/img/logo_smartextil_horizontal.svg" alt="logo smartextil"></a></div>
                 <div class="col-4"></div>
-                <div class="col-2 fl_r"><a class="navtxt burger" href="proceso_creativo.html">|||</a></div>
+                <label class="col-2 fl_r" for="burger"><h5 class="navtxt burger">|||</h5></label>
+                <input class="d-none" type="checkbox" id="burger">
+
+                <label class="col-12 colapse d-none-md">
+                    <ul>
+                        <li><a class="navtxt" href="proceso_creativo.html">Proceso de Creación</a></li>
+                        <li><a class="navtxt" href="resultados.html">Resultados</a></li>
+                        <li><a class="navtxt" href="toolkit.html">Toolkit</a></li>
+                        <li><a class="navtxt" href="contactanos.html">Contáctanos</a></li>
+                    </ul>   
+                </label>
+
             </div>
         </div>
     </nav>
@@ -88,7 +99,7 @@
         <div class="header__carrousel__text d-block d-none-lg">
             <h1>SMARTEXTIL</h1>
             <h4>Es un proyecto financiado por el Fondo Nacional de Desarrollo Cultural y las Artes, Convocatoria 2021. <br>Este proyecto busca la integración de Tecnología y Diseño mediante la vinculación de Biomateriales, Electrónica embebida y Fabricación Digital.
-                  </h4>
+            </h4>
         </div>
         <div class="carrousel_dot m-auto">
             <a id="dot-1" onclick="dot1_active()" href="#pic1"><div class="dot dot1 active_dot"></div></a>
